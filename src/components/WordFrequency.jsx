@@ -43,6 +43,7 @@ const WordFrequency = () => {
   return (
     <div>
       <SubmitButton fetchData={fetchData} />
+      {loading ? <Loading /> : <Histogram freqWords={data} />}
       {/*{loading ? (
         <Loading />
       ) : (
@@ -52,8 +53,6 @@ const WordFrequency = () => {
           ))}
         </ul>
           )}*/}
-
-      {loading ? <Loading /> : <Histogram freqWords={data} />}
     </div>
   );
 };

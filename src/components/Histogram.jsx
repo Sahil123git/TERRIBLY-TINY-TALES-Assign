@@ -116,14 +116,6 @@ const Histogram = ({ freqWords }) => {
       ) : (
         <Loading />
       )}
-
-      <ul className={style.histogram}>
-        {freqWords.map((ele, ind) => (
-          <li key={ind}>
-            {ele[0]} , {ele[1]}
-          </li>
-        ))}
-      </ul>
     </div>
   );
 };
