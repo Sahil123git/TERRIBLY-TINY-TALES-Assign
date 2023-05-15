@@ -8,6 +8,7 @@ import Histogram from "./Histogram";
 const WordFrequency = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(1);
+  const [clicked, setClicked] = useState(0);
 
   const fetchData = () => {
     // console.log("hii there");
@@ -42,17 +43,16 @@ const WordFrequency = () => {
   };
   return (
     <div>
-      <SubmitButton fetchData={fetchData} />
-      {loading ? <Loading /> : <Histogram freqWords={data} />}
-      {/*{loading ? (
-        <Loading />
+      <SubmitButton fetchData={fetchData} setClicked={setClicked} setLoading={setLoading}/>
+      {loading === 1 ? (
+        clicked === 1 ? (
+          <Loading />
+        ) : (
+          <p></p>
+        )
       ) : (
-        <ul className={style.histogram}>
-          {data.map((ele, ind) => (
-            <li key={ind}>{ele[0]}</li>
-          ))}
-        </ul>
-          )}*/}
+        <Histogram freqWords={data} />
+      )}
     </div>
   );
 };

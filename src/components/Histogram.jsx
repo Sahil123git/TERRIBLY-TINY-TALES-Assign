@@ -1,4 +1,4 @@
-import style from "./WordFrequency.module.css";
+import style from "./Histogram.module.css";
 import Chart from "react-apexcharts";
 import Loading from "./Loading";
 import ExcelJS from "exceljs";
@@ -111,7 +111,9 @@ const Histogram = ({ freqWords }) => {
             type="bar"
             width={Math.min(800, screenSize.width - 150)}
           />
-          <button onClick={handleExport}>Download CSV</button>
+          <button className={style.btnStyle} onClick={handleExport}>
+            Download CSV
+          </button>
         </>
       ) : (
         <Loading />

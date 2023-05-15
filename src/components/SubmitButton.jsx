@@ -1,7 +1,7 @@
 import styles from "./submitButton.module.css";
 import { useState } from "react";
 
-const SubmitButton = ({ fetchData }) => {
+const SubmitButton = ({ fetchData, setClicked, setLoading }) => {
   const [toggle, setToggle] = useState(1);
   return (
     <div
@@ -13,6 +13,8 @@ const SubmitButton = ({ fetchData }) => {
         className={styles.button}
         onClick={() => {
           setToggle(0);
+          setClicked(1);
+          setLoading(1);
           fetchData();
         }}
       >
