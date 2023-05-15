@@ -78,7 +78,7 @@ const Histogram = ({ freqWords }) => {
 
     const buffer = await workbook.csv.writeBuffer();
     const blob = new Blob([buffer], { type: "text/csv;charset=utf-8" });
-    saveAs(blob, "top20MostOcc.csv");
+    saveAs(blob, "top20MostOccWords.csv");
   };
 
   function getCurrentDimension() {
