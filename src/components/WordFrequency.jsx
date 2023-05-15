@@ -18,7 +18,7 @@ const WordFrequency = () => {
     axios
       .get("https://www.terriblytinytales.com/test.txt")
       .then((response) => {
-        console.log(response.data);
+        // console.log(response.data);
         words = response.data.replace(/[^\w\s]/gi, "").split(/\s+/);
         // console.log(words);
         words.forEach((word) => {
@@ -35,7 +35,7 @@ const WordFrequency = () => {
         top20Words = wordFrequencyArray.slice(0, 20);
         setData(top20Words);
         setLoading(0);
-        console.log(top20Words);
+        // console.log(top20Words);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
