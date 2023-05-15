@@ -14,7 +14,7 @@ This project is a web application that fetches a text file from an API and plots
 
 #### **Loading Component** : This will show loading animation if loading useState is 1
 
-#### **Histogram Component** : After fetching data this components plots histogram using react-apexcharts and show download CSV button using exceljs
+#### **Histogram Component** : After fetching data this components plots histogram using react-apexcharts and shows download CSV button using exceljs
 
 ## Project Setup
 
