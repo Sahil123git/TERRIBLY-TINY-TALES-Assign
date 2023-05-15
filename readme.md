@@ -1,6 +1,6 @@
 # **TERRIBLY TINY TALES Assignment**
 
-## This project has been created for frontend engineer interns role atTerribly Tiny Tales. The project is hosted on Netlify for easy access..
+## This project has been created for frontend engineer intern role at Terribly Tiny Tales. The project is hosted on Netlify for easy access..
 
 ## **Netlify-Link** :- https://terribly-tiny-tales-assign.netlify.app/
 
