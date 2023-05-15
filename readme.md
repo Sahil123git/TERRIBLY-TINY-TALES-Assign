@@ -1,20 +1,20 @@
-# TERRIBLY TINY TALES Assignment
+# **TERRIBLY TINY TALES Assignment**
 
-## This is a project made for frontend engineer interns for Terribly Tiny Sales.
+## This project has been created for frontend engineer interns role atTerribly Tiny Tales. The project is hosted on Netlify for easy access..
 
-## Netlify-Link :- https://terribly-tiny-tales-assign.netlify.app/
+## **Netlify-Link** :- https://terribly-tiny-tales-assign.netlify.app/
 
 This project is a web application that fetches a text file from an API and plots a histogram of the 20 most occurring words in the text file using the React library and ApexCharts library.
 
-## Components -: This project is having 4 main components
+## **Components** -: This project is having 4 main components
 
-### WordFrequency Component : This is the entry point of the application that is having rest 3 components
+#### **WordFrequency Component** : This is the entry point of the application that is having rest 3 components
 
-### SubmitButton Component : This component is having Button when user click on this fetchData function is called to fetch data from the API and display the histogram
+#### **SubmitButton Component** : This component is having Button when user click on this fetchData function is called to fetch data from the API and display the histogram
 
-### Loading Component : This will show loading animation if loading useState is 1
+#### **Loading Component** : This will show loading animation if loading useState is 1
 
-### Histogram Component : After fetching data this components plots histogram using react-apexcharts and show download CSV button using exceljs
+#### **Histogram Component** : After fetching data this components plots histogram using react-apexcharts and show download CSV button using exceljs
 
 ## Project Setup
 
