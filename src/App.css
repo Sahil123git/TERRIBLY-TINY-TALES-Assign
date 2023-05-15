@@ -1,0 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+  /* display: ; */
+  /* background-color: black; */
+}
+.bgColor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}

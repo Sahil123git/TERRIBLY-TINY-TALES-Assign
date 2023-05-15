@@ -1,0 +1,29 @@
+/* Button.module.css */
+
+.showButtonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.hideButtonContainer {
+  display: none;
+}
+
+.button {
+  border-color: #3498db;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  font-size: larger;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  transition: all 300ms ease-in-out;
+  cursor: pointer;
+}
+.button:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+  color: #3498db;
+  background-color: #e1eceb;
+  transform: scale(1.5);
+}
